@@ -11,4 +11,19 @@ const solution = string => {
   return newStr.join("");
 }
 
-console.log(solution('camelCasing'))
+console.log(solution('camelCasing')) //returns camel Casing
+
+// Other Solutions
+function solution(string) {
+  return(string.replace(/([A-Z])/g, ' $1'));
+}
+
+function solution(string) {
+  string = string.split('').map(function (el) {
+    if (el === el.toUpperCase()) {
+      el = ' ' + el
+    }
+    return el
+  })
+  return string.join('')
+}
