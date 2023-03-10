@@ -14,11 +14,11 @@ const solution = string => {
 console.log(solution('camelCasing')) //returns camel Casing
 
 // Other Solutions
-function solution(string) {
+function soln(string) {
   return(string.replace(/([A-Z])/g, ' $1'));
 }
 
-function solution(string) {
+function newSoln(string) {
   string = string.split('').map(function (el) {
     if (el === el.toUpperCase()) {
       el = ' ' + el
